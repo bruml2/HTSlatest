@@ -637,10 +637,10 @@ video {
   border-radius: 0.25rem;
   display: inline-block;
   font-weight: 600;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
   --tw-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   --tw-text-opacity: 1;

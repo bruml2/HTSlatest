@@ -43,5 +43,6 @@ Note new VSCode settings:
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 300,
 
+Can't get live-server to open in VSCode!!!
 
-
+For 00NaplesProject: live-server settings are in .vscode/settings.json
