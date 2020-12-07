@@ -24,11 +24,6 @@
       <div id="availtlscontainer"
         class="mt-3 px-4 py-2 border border-blue-600 rounded-md">
         <ul id="availtlslist">
-          <li>
-            <a href="#" class="inline-block mr-3 px-1 rounded shadow-md bg-indigo-400 hover:bg-indigo-600 text-xs text-white tracking-wide font-semibold">select</a>
-            <span class="font-bold">The Hebrew Bible:</span>
-            <span class="select-tl-subtitle">eras and their precipitating events</span>
-          </li>
         </ul>
       </div>
     </section>
@@ -47,10 +42,29 @@
   </div>
   <script>
     let availTLs = [
-      {title: "The Hebrew Bible:",
+      {id: 1,
+       title: "The Hebrew Bible:",
        subtitle: "eras and their precipitating events"},
-      {title: "Beethoven:", subtitle: "his life and works"},
-    ]
+      {id: 2,
+       title: "Beethoven:", subtitle: "his life and works"},
+    ];
+    function displayAvailTLs(availTLs, filterProp="", filterValue="") {
+      const toBeDisplayed = availTLs
+      if (filterProp) {
+        toBeDisplayed = availTLs.filter((item) => item[filterProp] == filterValue)
+      }
+      const availtlslistEl = document.querySelector('#availtlslist')
+      toBeDisplayed.forEach(tl => {
+        let newListItem = document.createElement('li')
+        newListItem.id = tl.id
+        newListItem.innerHTML =
+          `<a href="#" class="inline-block mr-3 px-1 rounded shadow-md bg-indigo-400 hover:bg-indigo-600 text-xs text-white tracking-wide font-semibold">select</a>
+          <span class="font-bold">${tl.title}</span>
+          <span class="italic">${tl.subtitle}</span>`;
+        availtlslistEl.appendChild(newListItem)
+      })
+    }
+    displayAvailTLs(availTLs)
   </script>
 </body>
 </html>
