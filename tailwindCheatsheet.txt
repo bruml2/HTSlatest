@@ -1,0 +1,38 @@
+
+  Tailwind Cheatsheet
+====================================
+https://play.tailwindcss.com/
+free Inter sans typeface: https://rsms.me/inter/
+free SVG icons: https://heroicons.com/
+see class sorter for VSCode: heybourn.headwind
+see explorer (shows available classes): PeterMekhaeil.vscode-tailwindcss-explorer
+
+Margin/Padding:
+  m|p + x y t b -<amt>  (mt-2.5)
+  0, 0.5, 1, 1.5, 2, 2.5, 3,4,5,6,7,8,9,10,11,12,14,16,20,24,28,32,36,40,44,48...
+
+Borders:
+  radius: rounded + none sm - md lg xl 2xl 3xl
+  width:  border  + 0 - 2 4 8  [no border-1; just border]
+  color:  border-<color>-<50 100 200 300 thru 900>
+
+Absolute Postioning (absolute inside relative)
+  top bottom left right + 0, 0.5, 1, 1.5, 2
+  inset | inset-x | inset-y + <amt>
+
+Typography
+  font-size:  text + xs sm base lg xl 2xl 3xl thru 9xl
+  family:     font + sans serif mono
+  color:      text + transparent current black white <color>-<num>
+  style:      italic
+  weight:     font + thin extra light light normal
+                     medium semibold bold extrabold black
+  letter spacing: tracking + tighter tight normal wide wider widest
+  line height:    leading  + none tight snug normal(1.5) relaxed loose etc
+
+  align:      text + left center right justify
+  overflow:   truncate  |  overflow-ellipsis  |  overflow-clip
+
+Box shadow:   shadow + sm - md lg xl 2xl inner none
+
+Cursor:       cursor + auto default pointer wait text move not-allowed
